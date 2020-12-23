@@ -30,7 +30,7 @@
 			}
 		},
 		{
-			"match": "(\\#define)\\s(\\w+)",
+			"match": "(\\#define)\\s([\\w\\d_]+)",
 			"name": "meta.define.sourcepawn",
 			"captures":
 			{
@@ -51,7 +51,7 @@
 		},
 		{
 			"comment": "Core types",
-			"match": "\\b(?:bool|char|const|float|int|void|any)\\b",
+			"match": "\\b(?:bool|char|const|float|int|void|any|Float|String|Function)\\b",
 			"name": "support.type.core.sourcepawn"
 		},
 		{
